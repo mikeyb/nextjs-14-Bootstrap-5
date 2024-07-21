@@ -1,0 +1,31 @@
+{
+    "name": "nextjs14_bootstrap5",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "start": "next start",
+        "build:local": "APP_ENV=local next build",
+        "build:dev": "APP_ENV=dev next build",
+        "build:prod": "APP_ENV=prod next build",
+        "deploy:local": "pnpm build:local && APP_ENV=local pnpm start",
+        "deploy:dev": "pnpm build:dev && APP_ENV=dev pnpm start",
+        "deploy:prod": "pnpm build:prod && APP_ENV=prod pnpm start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "bootstrap": "^5.3.3",
+        "next": "14.2.5",
+        "react": "^18",
+        "react-dom": "^18",
+        "sass": "^1.77.8"
+    },
+    "devDependencies": {
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.5",
+        "typescript": "^5"
+    }
+}
